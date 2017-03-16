@@ -1,0 +1,39 @@
+{
+  "name": "santander-OFX",
+  "version": "0.0.1",
+  "dependencies": {
+    "ofx": "0.4.0",
+    "jquery": "3.1.1",
+    "lodash": "^4.6.1",
+    "moment": "2.17.1"
+  },
+  "devDependencies": {
+    "browserify": "^12.0.1",
+    "browserify-shim": "^3.8.11",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-crx": "git://github.com/PavelVanecek/gulp-crx.git#v0.1.1",
+    "gulp-cssnano": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.5",
+    "gulp-zip": "^3.0.2",
+    "lodash.assign": "^3.2.0",
+    "partialify": "^3.1.5",
+    "pathmodify": "^0.5.0",
+    "strictify": "^0.2.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  },
+  "browserify": {
+    "transform": [
+      "partialify",
+      "strictify"
+    ]
+  },
+  "browser": {},
+  "browserify-shim": {},
+  "license": "MIT"
+}

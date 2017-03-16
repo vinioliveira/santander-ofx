@@ -1,0 +1,35 @@
+{
+  "name": "Santander OFX",
+  "version": "0.0.1",
+  "description": "Export Cartão de Crédito para OFX",
+  "author": "Vinicius",
+  "icons": {
+    "16": "icon/santander.png",
+    "128": "icon/santander.png"
+  },
+
+  "background": { "scripts": ["compile/js/jquery-3.1.1.js"] },
+
+  "browser_action": {
+    "default_icon": {
+      "19": "icon/santander.png",
+      "38": "icon/santander.png"
+    },
+    "default_title": "Santander OFX",
+    "default_popup": "popup.html"
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    {"fileSystem": ["write"]}
+  ],
+
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "manifest_version": 2,
+
+  "web_accessible_resources": [
+    "icons/*",
+    "buttons.html"
+  ]
+}
